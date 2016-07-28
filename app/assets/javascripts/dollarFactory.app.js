@@ -1,4 +1,3 @@
-console.log('loading dollarFactory');
 angular.module('Dollar')
   .factory('dollarFactory', [
     '$http',

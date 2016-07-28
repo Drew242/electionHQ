@@ -1,4 +1,3 @@
-console.log('loading controller')
 angular.module('Dollar')
   .controller('followCtrl', [
     'dollarFactory',

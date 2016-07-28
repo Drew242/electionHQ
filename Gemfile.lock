@@ -40,8 +40,6 @@ GEM
       railties (>= 4.2, < 6)
       sprockets (~> 3.0)
       tilt
-    angular-ui-router-rails (0.2.15)
-    angularjs-rails (1.5.6)
     arel (6.0.3)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -81,9 +79,6 @@ GEM
     mini_portile2 (2.1.0)
     minitest (5.9.0)
     multi_json (1.12.1)
-    ngannotate-rails (1.2.2)
-      execjs
-      rails (>= 3.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
@@ -163,13 +158,10 @@ PLATFORMS
 
 DEPENDENCIES
   angular-rails-templates
-  angular-ui-router-rails
-  angularjs-rails
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
-  ngannotate-rails
   pg
   pry
   rails (= 4.2.3)
