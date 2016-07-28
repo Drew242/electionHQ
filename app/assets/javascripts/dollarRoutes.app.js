@@ -1,16 +1,16 @@
 console.log('loading dollarRoutes')
 angular.module('Dollar').config(function($routeProvider){
   $routeProvider.when('/', {
-    templateUrl: 'views/main.html'
+    templateUrl: 'main.html'
   })
   $routeProvider.when('/clinton', {
-    templateUrl: 'views/clinton.html'
+    templateUrl: 'clinton.html'
   })
   $routeProvider.when('/trump', {
-    templateUrl: 'views/trump.html'
+    templateUrl: 'trump.html'
   })
   $routeProvider.when('/forecast', {
-    templateUrl: 'views/forecast.html',
+    templateUrl: 'forecast.html',
     controller: 'followCtrl',
   })
 
