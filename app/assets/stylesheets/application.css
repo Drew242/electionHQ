@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  padding-top: 8em;
+  background: url('americanFlagMoney.jpg') no-repeat left top;
+}
+
+/*.body {
+  background: url('../images/americaMoney.jpg') no-repeat left top;
+  background-size: contain;
+  min-height: 25em;
+}*/
+
+.electionCountdown {
+  margin-left: 15em;
+  margin-top: 8em;
+}
+
+#header {
+  font-size: 3em;
+}
+
+.clockContainer {
+  text-align: center;
+  padding: 1%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.headshot {
+  margin-top: 3%;
+  max-width: 15em;
+  border-radius: 8px;
+}
+
+.dem {
+  min-height: 5em;
+  background-color: rgba(0, 0, 255, 0.5);;
+  color: white;
+  text-align: center;
+}
+
+.rep {
+  min-height: 5em;
+  background-color: rgba(255, 0, 0, 0.5);;
+  color: white;
+  text-align: center;
+}
+
+.candProf {
+  font-size: 1.5em;
+  list-style: none;
+  text-align: left;
+}
+
+.electProf {
+  list-style: none;
+  text-align: left;
+}
+
+.muteGrey {
+  color: #000;
+}
+
+.navbar-nav {
+  padding: 1%;
+  font-size: 2em;
+}
+
+#redHover:hover {
+  color: red;
+}
+
+#blueHover:hover {
+  color: blue;
+}
+
+.contentContainer {
+  padding: 1%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.margCont {
+  margin: 2%;
+}
+
+.wikilink {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.wikilink:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#repRed {
+  color: red;
+}
+
+#demBlue {
+  color: blue;
+}

@@ -1,0 +1,13 @@
+<div class='col-lg-10 col-lg-offset-1 rep'>
+  <img class='headshot margCont' src='/images/trump.png'/>
+  <span><a class='wikilink' href='https://en.wikipedia.org/wiki/Donald_Trump'>{{ follow.trump.cand_name }}</a></span>
+  <ul class='candProf'>
+    <li>Party: {{ follow.trump.party }}</li>
+    <li>State: {{ follow.trump.state }}</li>
+    <li>Spent: {{ follow.trump.spent | currency }}</li>
+    <li>Cash on hand: {{ follow.trump.cash_on_hand | currency }}</li>
+    <li>Debt: {{ follow.trump.debt | currency }}</li>
+    <li>Total: {{ follow.trump.total | currency}}</li>
+  </ul>
+  <p class='muteGrey'>Source: {{ follow.trump.source }}</p>
+</div>
