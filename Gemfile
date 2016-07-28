@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor', group: :production
 
 gem 'rails', '4.2.3'
 gem 'pg'
@@ -19,3 +20,5 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+ruby '2.2.3'
