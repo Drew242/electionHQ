@@ -2,12 +2,19 @@
   <img class='headshot margCont' src='/assets/trump.png'/>
   <span><a class='wikilink' href='https://en.wikipedia.org/wiki/Donald_Trump'>{{ follow.trump.cand_name }}</a></span>
   <ul class='candProf'>
-    <li>Party: {{ follow.trump.party }}</li>
+    <% @trump = OpenSecrets.new.trump %>
+    <li>Party: <%= @trump["party"] %></li>
+    <li>State: <%= @trump["state"] %></li>
+    <li>Spent: <%= @trump["spent"] %></li>
+    <li>Cash on hand: <%= @trump["cash_on_hand"] %></li>
+    <li>Debt: <%= @trump["debt"] %></li>
+    <li>Total: <%= @trump["total"] %></li>
+    <!-- <li>Party: {{ follow.trump.party }}</li>
     <li>State: {{ follow.trump.state }}</li>
     <li>Spent: {{ follow.trump.spent | currency }}</li>
     <li>Cash on hand: {{ follow.trump.cash_on_hand | currency }}</li>
     <li>Debt: {{ follow.trump.debt | currency }}</li>
-    <li>Total: {{ follow.trump.total | currency}}</li>
+    <li>Total: {{ follow.trump.total | currency}}</li> -->
   </ul>
-  <p class='muteGrey'>Source: {{ follow.trump.source }}</p>
+  <p class='muteGrey'>Source: <%= @trump["source"] %></p>
 </div>

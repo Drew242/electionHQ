@@ -5,7 +5,32 @@
     are made can be found <a href="http://pollyvote.com/en/about/">here</a></p>
     <div class='col-md-5 margCont'>
       <ul class='electProf'>
+        <% @forecast = PollyVote.new.forecast %>
         <li>
+          Date Published: <span class='pull-right'><%= @forecast['fcdate'] %></span>
+        </li>
+        <li>
+          Survey Level: <span class='pull-right'><%= @forecast['state'] %></span>
+        </li>
+        <li>
+          Forecast Component: <span class='pull-right'><%= @forecast['fccomponent'] %></span>
+        </li>
+        <li>
+          Days until election: <span class='pull-right'><%= @forecast['daystoelection'] %></span>
+        </li>
+        <li>
+          Republican Vote: <span class='pull-right' id='repRed'><%= @forecast['fcrepvs'] %></span>
+        </li>
+        <li>
+          Democrat Vote: <span class='pull-right' id='demBlue'><%= @forecast['fcdemvs'] %></span>
+        </li>
+        <li>
+          Sample Size (If Available): <span class='pull-right'><%= @forecast['sample'] %></span>
+        </li>
+        <li>
+          Margin of Error (If Available): <span class='pull-right'><%= @forecast['moe'] %></span>
+        </li>
+        <!-- <li>
           Date Published: <span class='pull-right'>{{ follow.prediction.fcdate | date }}</span>
         </li>
         <li>
@@ -28,7 +53,7 @@
         </li>
         <li>
           Margin of Error (If Available): <span class='pull-right'>{{ follow.prediction.moe }}</span>
-        </li>
+        </li> -->
       </ul>
     </div>
     <div class='col-md-6 margCont'>

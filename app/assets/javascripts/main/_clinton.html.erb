@@ -1,0 +1,20 @@
+<div class='col-lg-10 col-lg-offset-1 dem'>
+  <img class='headshot margCont' src='/assets/hillary.jpg'/>
+  <span><a class='wikilink' href='https://en.wikipedia.org/wiki/Hillary_Clinton'>{{ follow.clinton.cand_name }}</a></span>
+    <ul class='candProf'>
+      <% @clinton = OpenSecrets.new.clinton %>
+      <li>Party: <%= @clinton["party"] %></li>
+      <li>State: <%= @clinton["state"] %></li>
+      <li>Spent: <%= @clinton["spent"] %></li>
+      <li>Cash on hand: <%= @clinton["cash_on_hand"] %></li>
+      <li>Debt: <%= @clinton["debt"] %></li>
+      <li>Total: <%= @clinton["total"] %></li>
+      <!-- <li>Party: {{ follow.clinton.party }}</li>
+      <li>State: {{ follow.clinton.state }}</li>
+      <li>Spent: {{ follow.clinton.spent | currency }}</li>
+      <li>Cash on hand: {{ follow.clinton.cash_on_hand | currency }}</li>
+      <li>Debt: {{ follow.clinton.debt | currency }}</li>
+      <li>Total: {{ follow.clinton.total | currency }}</li> -->
+    </ul>
+    <p class='muteGrey'>Source: <%= @clinton["source"] %></p>
+</div>
